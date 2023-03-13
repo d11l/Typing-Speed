@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+:root {
+    --main-color: #2196f3;
+    --se-color: #f6efef;
+  }
+
+  body {
+    font-family: "Open Sans", sans-serif;
+    user-select: none;
+  }
+  .game {
+    background-color: #181818;
+    min-height: 100vh;
+  }
+  .container {
+    margin: auto;
+    max-width: 900px;
+  }
+
+  .name {
+    color: #fffffe;
+    border-bottom:1px solid #cccccc1d; 
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .choose{
+    width: fit-content;
+    margin: 10px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #2e2e2e;
+    padding: 10px 20px;
+    border-radius: 5px;
+   
+  }
+  .choose label{
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+
+  .choose select{
+    padding: 5px;
+    background-color: #2e2e2e;
+    color: #ddd6d6;
+  }
+  .choose select:focus{
+    outline: none;
+  }
+
+  .start {
+    width: 70%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #50c4cf;
+    color: #2e2e2e;
+    padding: 20px;
+    cursor: pointer;
+    transition: .3s;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  .start:hover{
+    opacity: .7;
+  }
+
+  .message {
+    background-color: #2e2e2e;
+    color: #ddd6d6;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 6px;
+    text-align: center;
+
+  }
+  .message span {
+    font-weight: bold;
+    color: #fffffe;
+  }
+  .message span::before {
+    content: "[ ";
+    color: #50c4cf;
+  }
+  .message span::after {
+    content: " ]";
+    color: #50c4cf;
+  }
+  
+  .the-word {
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    color: #fbdd74;
+    user-select: none;
+  }
+  .input {
+    margin: 15px 0;
+    width: 100%;
+    display: block;
+    padding: 15px;
+    border: 2px solid #fbde7440;
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 6px;
+    background-color: #2e2e2e;
+    color: #fff;
+    caret-color: #fbdd74;
+  }
+  .input:focus {
+    outline: none;
+  }
+  .upcoming-words {
+    background-color: #181818;
+    color: white;
+    margin: 15px 0;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .upcoming-words div {
+    background-color: #50c4cf;
+    font-weight: bold;
+    margin: 4px;
+    padding: 10px;
+    border-radius: 6px;
+
+  }
+  .control {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2e2e2e;
+    color: white;
+    padding: 15px;
+  }
+  .control span {
+    font-weight: bold;
+    color: #50c4cf;
+  }
+  .finish {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    padding: 15px;
+  }
+  .finish .good {
+    color: greenyellow;
+  }
+  .finish .bad {
+    color: red;
+  }
+
+  .finish button{
+    background-color: #50c4cf;
+    color: #2e2e2e;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .3s;
+  }
+
+  .finish button:hover{
+    opacity: .7;
+  }
+
+
+
+  .NotComputer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #2e2e2e;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+  }
+
+  .NotComputer h2{
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    margin: 100px;
+  }
+
+
+  @media (min-width: 992px) {
+    .NotComputer{
+      display: none;
+    }
+  }
