@@ -109,9 +109,13 @@ function GenericWord(){
 
 }
 
-
+let F = false; 
 function StartPlay(){
   timeLeft.innerHTML = leveltime;
+  if(!F){
+   F = true; 
+   timeLeft.innerHTML = (4+leveltime);
+  }
   let start = setInterval(() =>{
     timeLeft.innerHTML--;
 
